@@ -27,92 +27,14 @@
 </head>
 <body class="hold-transition layout-top-nav">
 
+<!-- Header -->
 {% include 'header.html' %}
+
 <!-- Main content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-            </div>
-        </div>
-    </section>
+{% block content %}
+{% endblock %}
 
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-            <h2 class="text-center display-4">Bạn muốn tập phát âm từ nào?</h2>
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <form action="simple-results.html">
-                        <div class="input-group">
-                            <input type="search" class="form-control form-control-lg" placeholder="Nhập từ tiếng Anh bạn muốn luyện tập">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-lg btn-default">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+<!-- Footer -->
+{% include 'footer.html' %}
 
-
-            <div class="row" style="background-color: transparent; height: 2rem;"></div>
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <div class="card card-primary card-outline" style="align-items: center;">
-                        <div class="card-header" >
-                            <p style="font-weight: bold; text-transform: uppercase; text-align: center; padding-left: 10px; font-size: 35px;">
-                                Từ của hôm nay
-                            </p> 
-                            <div id="currentDate" style="text-align: center; padding-left: 10px; font-size: 20px;"></div>
-                            </div>
-                        <div class="card-body col-md-12">
-                            <div class="row">
-                                <div class="col-md-4 align-items: middle" style="display: flex; flex-direction: column; justify-content: center;">
-                                    <h3 style="font-weight: bold; text-transform: uppercase; font-size: 30px;">word</h3>
-                                    <div class="row">
-                                        <div>
-                                            <p style="font-size: 20px;">/wɜːrd/</p>
-                                        </div>
-                                        <div class="offset-md-1">
-                                            <img src="dist\img\credit\visa.png" alt="Audio" style="width: 30px; height: 30px;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 offset-md-1">
-                                    <p style="font-size: 20px;">(Noun): Từ, chữ</p>
-                                    <p style="font-size: 20px;">Ví dụ: I don't know the meaning of this word.</p>
-                                </div>
-                            </div>
-                            <div class="row" style="display: flex; text-align: center; justify-content: center;">
-                                <p style="font-size: 20px; color: #0000FF;">Nhấn để kiểm tra phát âm</p>
-                            </div>
-                            <div class="row">
-                                <div class="mx-auto" style="display: flex; align-items: center; justify-content: center; margin-top: 0px;">
-                                    <div  style="background-color: blue; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;text-align: center;">
-                                        <img src="dist\img\credit\paypal2.png" alt="Microphone Icon" style="width: 30px; height: 30px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <script>
-                            // Get the current date
-                            var currentDate = new Date();
-
-                            // Format the date as "Ngày .. Tháng .. Năm ...."
-                            var formattedDate = "Ngày " + currentDate.getDate() + " Tháng " + (currentDate.getMonth() + 1) + " Năm " + currentDate.getFullYear();
-
-                            // Insert the formatted date into the HTML
-                            document.getElementById("currentDate").innerHTML = formattedDate;
-                        </script>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!-- /.content-wrapper -->
 </html>

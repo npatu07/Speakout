@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Main content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <h2 class="text-center display-4">Bạn muốn tập phát âm từ nào?</h2>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form action="simple-results.html">
+                        <div class="input-group">
+                            <input type="search" class="form-control form-control-lg" placeholder="Nhập từ tiếng Anh bạn muốn luyện tập">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-lg btn-default">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    {% include 'wordcomponents/_todaywordcard.html' %}
+        
+    </section>
+</div>
+<!-- /.content-wrapper -->
+{% endblock %}

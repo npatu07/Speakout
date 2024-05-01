@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+            </div>
+        </div>
+    </section>
+<!-- Word search bar -->
+{% include 'wordcomponents/_wordSearchBar.html' %}
+<!-- /.Word search bar -->
+
+<!-- Standard Word Card -->
+{% include 'wordcomponents/_standardWordcard.html' %}
+<!-- /.Standard Word Card -->
+</div>
+
+{% endblock %}

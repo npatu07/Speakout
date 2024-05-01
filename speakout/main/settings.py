@@ -41,9 +41,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "homepage_app",
     "rest_framework",
-    "pronunciation_checker_app",
     "speakoutapi",
-    "homepage_app",
+    "pronunciation_checker_app",
+    "dictionary_app",
 ]
 
 MIDDLEWARE = [

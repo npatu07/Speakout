@@ -1,0 +1,52 @@
+{% load static %}
+
+<!-- Word card -->
+
+<div class="row" style="background-color: transparent; height: 2rem;"></div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card card-primary card-outline" style="align-items: center;">
+                <div class="card-header" >
+                    <p style="font-weight: bold; text-transform: uppercase; text-align: center; padding-left: 10px; font-size: 35px;">
+                        Word
+                    </p> 
+                    </div>
+
+                <!-- Word meaning -->
+                <div class="card-body col-md-12">
+                    <div class="row">
+                        <div class="col-md-12 align-items: middle" style="display: flex; flex-direction: column; justify-content: center;">
+                            <div class="row">
+                                <div>
+                                    <span style="font-size: 20px; font-weight: bold;">US:  </span>
+                                    <span style="font-size: 20px;">/wɜːrd/</span>
+                                </div>
+                                <div class="offset-md-1">
+                                    <img src="{% static 'img/audio.png' %}" alt="Audio" style="width: 30px; height: 30px;">
+                                </div>
+                            </div>
+                            <p style="font-size: 20px; font-weight: bold;">(Noun)</p>
+                        </div>
+                        <div class="col-md-12 offset-md-0">
+                            <p style="font-size: 20px;">Nghĩa: Từ, chữ</p>
+                            <p style="font-size: 20px;">Ví dụ: I don't know the meaning of this word.</p>
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex; text-align: center; justify-content: center;">
+                        <p style="font-size: 20px; color: #0000FF;">Nhấn để kiểm tra phát âm</p>
+                    </div>
+                    <div class="row">
+                        <div class="mx-auto" style="display: flex; align-items: center; justify-content: center; margin-top: 0px;">
+                            <div  style="background-color: blue; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;text-align: center;">
+                                <img src="{% static 'img\microphone.png' %}" alt="Microphone Icon" style="height: 30px; width: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. word meaning -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /. word card -->
